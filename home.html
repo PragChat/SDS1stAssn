@@ -1,0 +1,145 @@
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<style>
+*{
+background-color : black;
+font-family : "Roboto", serif;
+}
+
+*{
+color : lime;
+}
+
+.avatar{
+animation: fadeIn ease 2s;
+}
+
+.blue{
+color : blue;
+}
+
+.hide{
+visibility: hidden;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer ul li {
+   display: inline-block;
+}
+
+.grey{
+color : grey;
+animation: fadeIn 1.5s ease 3s 1 normal forwards;
+visibility : hidden;
+}
+
+.pop{
+visibility : hidden;
+animation: popIn 1s ease 2s 1 normal forwards;
+}
+
+div.name{
+display : flex;
+justify-content : center;
+align-items : center; 
+}
+
+ul{
+list-style-type: none;
+margin : 0;
+padding : 0;
+}
+
+li{
+margin : 30px 10px;
+}
+
+img{
+display : flex;
+height : 100px;
+margin-left : auto;
+margin-right : auto;
+justify-content : center
+}
+
+a{
+text-decoration : none;
+animation: fadeIn 1s ease 4s 1 normal forwards;
+visibility : hidden;
+}
+
+hr{
+animation: fadeIn 1.5s ease 2s 1 normal forwards;
+visibility : hidden;
+}
+
+h1{
+color : lime;
+font-family : "Roboto", serif;
+white-space: nowrap;
+padding : 0;
+overflow: hidden;
+animation: animated-text 1.5s steps(20,end) 1s 1 normal both;
+}
+
+.blink{
+animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: lime;
+  }
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 420px;}
+}
+
+@keyframes fadeIn {
+0% {opacity:0;
+visibility:visible;}
+100% {opacity:1;visibility:visible;}
+}
+
+@keyframes popIn {
+0% {opacity:0;
+visibility:visible;}
+99% {opacity:0;
+visibility:visible;}
+100% {opacity:1;visibility:visible;}
+}
+</style>
+<title>
+</title>
+</head>
+<body><div class="avatar"><img src="AvatarMaker.svg" align="center"></div>
+<div class=name><h1>PRAGYANSH CHATURVEDI<span class=blink>_</span></h1></div>
+<hr>
+<span class="pop"><span class="hide">g</span>user@pragchatwebsite:<span class="blue">~$</span>ls<br>
+<span class="hide">g</span><span class="blue">About&emsp;Contact Me</span></span><br>
+<span class="grey">/*Click on the desired command*/</span><br>
+<div class="list">
+<ul>
+<li><a href=""><span>user@pragchatwebsite:</span><span class="blue">~$</span>cd .<span class=blink>_</span></a></li>
+<li><a href="About.html"><span>user@pragchatwebsite:</span><span class="blue">~$</span>cd ./About<span class=blink>_</span></a></li>
+<li><a href="contact.html"><span>user@pragchatwebsite:</span><span class="blue">~$</span>cd ./Contact Me<span class=blink>_</span></a></li>
+</ul></div>
+<div class="footer"><hr><ul><li><a class="second" href="">FaceBook</a></li><li><a class="second" href="">GitHub</a></li><li><a class="second" href="">E-Mail</a></li></ul></div>
+</body>
+</html>
