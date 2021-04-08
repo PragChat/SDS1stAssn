@@ -69,7 +69,7 @@
         margin: 30px 10px;
       }
 
-      img {
+      .avat {
         display: flex;
         height: 100px;
         margin-left: auto;
@@ -198,11 +198,67 @@
           visibility: visible;
         }
       }
+
+      input[type=text], textarea{
+        border: none;
+      }
+
+      input[type=text]:focus, textarea:focus{
+        border: none;
+      }
+
+      label{
+        display: inline-block;
+      }
+
+      .form{
+        margin: 10px 0px;
+      }
+
+      @media only screen and (min-width: 600px) and (min-height:700px){
+        .avat {
+        display: flex;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+      }
+
+      h1{
+        font-size: 43;
+      }
+
+      textarea{
+        resize: none;
+      }
+
+      @-webkit-keyframes animated-text {
+        from {
+          width: 0;
+        }
+        to {
+          width: 600px;
+        }
+      }
+
+      @keyframes animated-text {
+        from {
+          width: 0;
+        }
+        to {
+          width: 600px;
+        }
+      }
+
+      .footer{
+        position: fixed;
+      }
+}
     </style>
     <title> </title>
   </head>
   <body>
-    <div class="avatar"><img src="AvatarMaker.svg" align="center" /></div>
+    <div class="avatar"><img src="AvatarMaker.svg" align="center" class="avat"></div>
     <div class="name">
       <h1>PRAGYANSH CHATURVEDI<span class="blink">_</span></h1>
     </div>
@@ -210,29 +266,38 @@
     <span class="pop"
       ><span class="hide">g</span>user@pragchatwebsite:<span class="blue"
         >~$</span
-      >ls<br />
-      <span class="hide">g</span
-      ><span class="blue">About&emsp;Contact Me</span></span
+      >chmod +x ./scripts/form.sh<br />
+      <span class="hide">g</span>user@pragchatwebsite:<span class="blue"
+        >~$</span
+      >./scripts/form.sh<br /></span
     ><br />
-    <span class="grey">/*Click on the desired command*/</span><br />
+    <span class="grey">/*Click on the space after the prompt to fill data. Click on submit to submit form.*/</span><br />
+
+    <div>
+      <form>
+        <div class="form"><label for="name">Name:</label></div>
+        <div class="form"><input type="text" id="name" name="Name" placeholder="click to enter"></div>
+        <div class="form"><label for="mail">E-Mail:</label></div>
+        <div class="form"><input type="text" id="mail" name="Mail" placeholder="click to enter"></div>
+        <div class="form"><label for="msg">Subject</label></div>
+        <div class="form"><textarea id="msg" name="MSG" style="height:100px" placeholder="click to enter"></textarea></div>
+        <div><input type="submit" value="Submit"></div>
+      </form>
+    </div>
+
+    <span class="grey">/*Click on the desired command.*/</span><br />
     <div class="list">
       <ul>
         <li>
-          <a href=""
+          <a href="index.html"
             ><span>user@pragchatwebsite:</span><span class="blue">~$</span>cd
-            .<span class="blink">_</span></a
+            ..<span class="blink">_</span></a
           >
         </li>
         <li>
           <a href="About.html"
             ><span>user@pragchatwebsite:</span><span class="blue">~$</span>cd
-            ./About<span class="blink">_</span></a
-          >
-        </li>
-        <li>
-          <a href=""
-            ><span>user@pragchatwebsite:</span><span class="blue">~$</span>cd
-            ./Contact Me<span class="blink">_</span></a
+            ../About<span class="blink">_</span></a
           >
         </li>
       </ul>
@@ -240,9 +305,9 @@
     <div class="footer">
       <hr />
       <ul>
-        <li><a class="second" href="">FaceBook</a></li>
-        <li><a class="second" href="">GitHub</a></li>
-        <li><a class="second" href="">E-Mail</a></li>
+        <li><a class="second" href="https://www.facebook.com/pragyansh.chaturvedi/"><img src="icons8-facebook.svg"></a></li>
+        <li><a class="second" href="https://github.com/PragChat"><img src="icons8-github.svg"></a></li>
+        <li><a class="second" href="mailto:pragyanshchaturvedi18@gmail.com"><img src="icons8-gmail.svg"></a></li>
       </ul>
     </div>
   </body>

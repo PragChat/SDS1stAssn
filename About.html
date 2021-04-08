@@ -90,7 +90,7 @@
         margin: 15px 10px;
       }
 
-      img {
+      .avat {
         display: flex;
         height: 100px;
         margin-left: auto;
@@ -114,7 +114,7 @@
         visibility: hidden;
       }
 
-      a:hover{
+      a:hover {
         background-color: gray;
       }
 
@@ -137,6 +137,10 @@
 
       .blink {
         animation: 1s blink step-end infinite;
+      }
+
+      .list{
+        margin-bottom: 150px;
       }
 
       @keyframes "blink" {
@@ -225,33 +229,105 @@
           width: 0;
         }
         to {
-          width: 350px;
+          width: 340px;
+        }
+      }
+
+      @media only screen and (min-width: 600px) and (min-height: 700px) {
+        .avat {
+          display: flex;
+          height: 150px;
+          margin-left: auto;
+          margin-right: auto;
+          justify-content: center;
+        }
+
+        h1 {
+          font-size: 43;
+        }
+
+        @-webkit-keyframes animated-text {
+          from {
+            width: 0;
+          }
+          to {
+            width: 600px;
+          }
+        }
+
+        @keyframes animated-text {
+          from {
+            width: 0;
+          }
+          to {
+            width: 600px;
+          }
+        }
+
+        .footer {
+          position: fixed;
         }
       }
     </style>
     <title> </title>
   </head>
   <body>
-    <div class="avatar"><img src="AvatarMaker.svg" align="center" /></div>
+    <div class="avatar">
+      <img src="AvatarMaker.svg" align="center" class="avat" />
+    </div>
     <div class="name">
       <h1>PRAGYANSH CHATURVEDI<span class="blink">_</span></h1>
     </div>
     <hr />
     <div class="main">
       <div class="textimg">
-        <br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-        officia deserunt mollit anim id est laborum.
+        <br /><br />/*Hi, I am Pragyansh Chaturvedi, CSE undergrad student at
+        IITR.<br />I am a developer at SDSLabs, a group in IITR consisiting of
+        students interested in tech and exploring various fields of technology.
+        I have a liking for Game development projects, IoT projects and CTFs.
+        Some of my projects have been mentioned below :*/<br /><br>/*Click on the title of project to access it's directory/proposal*/
+        <dl>
+          <dt class="links">
+            <a
+              href="https://drive.google.com/drive/folders/1ZCAqgxkn2_Yu1Zxmh1AFSxAGtAdYD-P1?usp=sharing"
+              >Neon Pixies</a
+            ><br>
+          </dt>
+          <dd>
+            A PvP Deathmatch shooter featuring asteroid style controls and a
+            neon based theme. It was built using the Godot Game Engine.
+            <br />
+          </dd>
+          <dt class="links"><br></dt>
+          <dt class="links"><a href="https://docs.google.com/document/d/1G7uR-HyraN6RuVYucxP_wHtyeMbKAIm-UgAMDyq5fLw/edit?usp=sharing">Rotate the room</a><br></dt>
+          <dd>
+            A puzzle game made on the unity game engine.The player can rotate
+            the background to guide a ball using gravity to its goal. buttons
+            and triggers were added to make the game dynamic and fun.
+            <br />
+          </dd>
+          <dt class="links"><br></dt>
+          <dt class="links">
+            <a
+              href="https://drive.google.com/file/d/1Ho5ab_P9cjavIFQzNZQgCIudvYcpoY6l/view?usp=sharing"
+              >Weather Balloon (ongoing)<br></a
+            >
+          </dt>
+          <dd>
+            An airborne payload consisting of an Arduino board with various
+            sensors to gather pollution data of CO2, CO, NOx, Ozone and PM at
+            different heights and then store it on an onboard SD Card. It can be
+            retrieved and data can be used to produce altitudinal and
+            geographical pollution maps<br>
+          </dd>
+        </dl>
+        <br>/*I am also a bibliophile and a casual gamer. Follow the links in the footer to know me more.*/
       </div>
       <div class="mainimg">
         <img src="imgraikou.jpg" class="actual" />
       </div>
     </div>
-    <br /><br /><br /><br />
+    <br /><br />
     <span class="grey">/*Click on the desired command*/</span><br />
     <div class="list">
       <ul>
@@ -272,9 +348,23 @@
     <div class="footer">
       <hr />
       <ul>
-        <li><a class="second" href="">FaceBook</a></li>
-        <li><a class="second" href="">GitHub</a></li>
-        <li><a class="second" href="">E-Mail</a></li>
+        <li>
+          <a
+            class="second"
+            href="https://www.facebook.com/pragyansh.chaturvedi/"
+            ><img src="icons8-facebook.svg"
+          /></a>
+        </li>
+        <li>
+          <a class="second" href="https://github.com/PragChat"
+            ><img src="icons8-github.svg"
+          /></a>
+        </li>
+        <li>
+          <a class="second" href="mailto:pragyanshchaturvedi18@gmail.com"
+            ><img src="icons8-gmail.svg"
+          /></a>
+        </li>
       </ul>
     </div>
   </body>

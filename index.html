@@ -69,7 +69,7 @@
         margin: 30px 10px;
       }
 
-      img {
+      .avat {
         display: flex;
         height: 100px;
         margin-left: auto;
@@ -88,6 +88,7 @@
         animation: fadeIn 1.5s ease 2s 1 normal forwards;
         -webkit-animation: fadeIn 1.5s ease 2s 1 normal forwards;
         visibility: hidden;
+        color: lime;
       }
 
       h1 {
@@ -199,11 +200,47 @@
           visibility: visible;
         }
       }
+
+      @media only screen and (min-width: 600px) and (min-height:700px){
+        .avat {
+        display: flex;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+      }
+
+      h1{
+        font-size: 43;
+      }
+
+      @-webkit-keyframes animated-text {
+        from {
+          width: 0;
+        }
+        to {
+          width: 600px;
+        }
+      }
+
+      @keyframes animated-text {
+        from {
+          width: 0;
+        }
+        to {
+          width: 600px;
+        }
+      }
+
+      .footer{
+        position: fixed;
+      }
+}
     </style>
     <title> </title>
   </head>
   <body>
-    <div class="avatar"><img src="AvatarMaker.svg" align="center" /></div>
+    <div class="avatar"><img src="AvatarMaker.svg" align="center" class="avat"></div>
     <div class="name">
       <h1>PRAGYANSH CHATURVEDI<span class="blink">_</span></h1>
     </div>
@@ -241,9 +278,9 @@
     <div class="footer">
       <hr />
       <ul>
-        <li><a class="second" href="">FaceBook</a></li>
-        <li><a class="second" href="">GitHub</a></li>
-        <li><a class="second" href="">E-Mail</a></li>
+        <li><a class="second" href="https://www.facebook.com/pragyansh.chaturvedi/"><img src="icons8-facebook.svg"></a></li>
+        <li><a class="second" href="https://github.com/PragChat"><img src="icons8-github.svg"></a></li>
+        <li><a class="second" href="mailto:pragyanshchaturvedi18@gmail.com"><img src="icons8-gmail.svg"></a></li>
       </ul>
     </div>
   </body>
