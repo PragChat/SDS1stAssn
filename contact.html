@@ -105,7 +105,7 @@
         animation: 1s blink step-end infinite;
       }
 
-      a:hover{
+      a:hover {
         background-color: gray;
       }
 
@@ -119,7 +119,7 @@
         }
       }
 
-      .list{
+      .list {
         margin-bottom: 150px;
       }
 
@@ -203,73 +203,73 @@
         }
       }
 
-      
-
-      @media only screen and (min-width: 600px) and (min-height:700px){
+      @media only screen and (min-width: 600px) and (min-height: 700px) {
         .avat {
-        display: flex;
-        height: 150px;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-      }
-
-      h1{
-        font-size: 43;
-      }
-
-      
-
-      @-webkit-keyframes animated-text {
-        from {
-          width: 0;
+          display: flex;
+          height: 150px;
+          margin-left: auto;
+          margin-right: auto;
+          justify-content: center;
         }
-        to {
-          width: 600px;
-        }
-      }
 
-      @keyframes animated-text {
-        from {
-          width: 0;
+        h1 {
+          font-size: 43;
         }
-        to {
-          width: 600px;
-        }
-      }
 
-      .footer{
-        position: fixed;
+        @-webkit-keyframes animated-text {
+          from {
+            width: 0;
+          }
+          to {
+            width: 600px;
+          }
+        }
+
+        @keyframes animated-text {
+          from {
+            width: 0;
+          }
+          to {
+            width: 600px;
+          }
+        }
+
+        .footer {
+          position: fixed;
+        }
       }
-}
-form{
-  animation: fadeIn 1s ease 4s 1 normal forwards;
+      form {
+        animation: fadeIn 1s ease 4s 1 normal forwards;
         -webkit-animation: fadeIn 1s ease 4s 1 normal forwards;
         visibility: hidden;
-}
-textarea{
+      }
+      textarea {
         resize: none;
       }
-input[type=text], textarea{
+      input[type="text"],
+      textarea {
         border: none;
       }
 
-      input[type=text]:focus, textarea:focus{
+      input[type="text"]:focus,
+      textarea:focus {
         border: none;
       }
 
-      label{
+      label {
         display: inline-block;
       }
 
-      .form{
+      .form {
         margin: 10px 0px;
       }
     </style>
     <title> </title>
   </head>
   <body>
-    <div class="avatar"><img src="AvatarMaker.svg" align="center" class="avat"></div>
+    <div class="avatar">
+      <img src="AvatarMaker.svg" align="center" class="avat" />
+    </div>
     <div class="name">
       <h1>PRAGYANSH CHATURVEDI<span class="blink">_</span></h1>
     </div>
@@ -282,17 +282,41 @@ input[type=text], textarea{
         >~$</span
       >./scripts/form.sh<br /></span
     ><br />
-    <span class="grey">/*Click on the space after the prompt to fill data. Click on submit to submit form.*/</span><br />
+    <span class="grey"
+      >/*Click on the space after the prompt to fill data. Click on submit to
+      submit form.*/</span
+    ><br />
 
     <div>
       <form>
         <div class="form"><label for="name">Name:</label></div>
-        <div class="form"><input type="text" id="name" name="Name" placeholder="click to enter"></div>
+        <div class="form">
+          <input
+            type="text"
+            id="name"
+            name="Name"
+            placeholder="click to enter"
+          />
+        </div>
         <div class="form"><label for="mail">E-Mail:</label></div>
-        <div class="form"><input type="text" id="mail" name="Mail" placeholder="click to enter"></div>
+        <div class="form">
+          <input
+            type="text"
+            id="mail"
+            name="Mail"
+            placeholder="click to enter"
+          />
+        </div>
         <div class="form"><label for="msg">Subject</label></div>
-        <div class="form"><textarea id="msg" name="MSG" style="height:100px" placeholder="click to enter"></textarea></div>
-        <div><input type="submit" value="Submit" class="submit"></div>
+        <div class="form">
+          <textarea
+            id="msg"
+            name="MSG"
+            style="height: 100px"
+            placeholder="click to enter"
+          ></textarea>
+        </div>
+        <div><input type="submit" value="Submit" class="submit" /></div>
       </form>
     </div>
 
@@ -316,9 +340,23 @@ input[type=text], textarea{
     <div class="footer">
       <hr />
       <ul>
-        <li><a class="second" href="https://www.facebook.com/pragyansh.chaturvedi/"><img src="icons8-facebook.svg"></a></li>
-        <li><a class="second" href="https://github.com/PragChat"><img src="icons8-github.svg"></a></li>
-        <li><a class="second" href="mailto:pragyanshchaturvedi18@gmail.com"><img src="icons8-gmail.svg"></a></li>
+        <li>
+          <a
+            class="second"
+            href="https://www.facebook.com/pragyansh.chaturvedi/"
+            ><img src="icons8-facebook.svg"
+          /></a>
+        </li>
+        <li>
+          <a class="second" href="https://github.com/PragChat"
+            ><img src="icons8-github.svg"
+          /></a>
+        </li>
+        <li>
+          <a class="second" href="mailto:pragyanshchaturvedi18@gmail.com"
+            ><img src="icons8-gmail.svg"
+          /></a>
+        </li>
       </ul>
     </div>
   </body>
