@@ -119,6 +119,10 @@
         }
       }
 
+      .list{
+        margin-bottom: 150px;
+      }
+
       @-webkit-keyframes animated-text {
         from {
           width: 0;
@@ -199,21 +203,7 @@
         }
       }
 
-      input[type=text], textarea{
-        border: none;
-      }
-
-      input[type=text]:focus, textarea:focus{
-        border: none;
-      }
-
-      label{
-        display: inline-block;
-      }
-
-      .form{
-        margin: 10px 0px;
-      }
+      
 
       @media only screen and (min-width: 600px) and (min-height:700px){
         .avat {
@@ -228,9 +218,7 @@
         font-size: 43;
       }
 
-      textarea{
-        resize: none;
-      }
+      
 
       @-webkit-keyframes animated-text {
         from {
@@ -254,6 +242,29 @@
         position: fixed;
       }
 }
+form{
+  animation: fadeIn 1s ease 4s 1 normal forwards;
+        -webkit-animation: fadeIn 1s ease 4s 1 normal forwards;
+        visibility: hidden;
+}
+textarea{
+        resize: none;
+      }
+input[type=text], textarea{
+        border: none;
+      }
+
+      input[type=text]:focus, textarea:focus{
+        border: none;
+      }
+
+      label{
+        display: inline-block;
+      }
+
+      .form{
+        margin: 10px 0px;
+      }
     </style>
     <title> </title>
   </head>
@@ -281,7 +292,7 @@
         <div class="form"><input type="text" id="mail" name="Mail" placeholder="click to enter"></div>
         <div class="form"><label for="msg">Subject</label></div>
         <div class="form"><textarea id="msg" name="MSG" style="height:100px" placeholder="click to enter"></textarea></div>
-        <div><input type="submit" value="Submit"></div>
+        <div><input type="submit" value="Submit" class="submit"></div>
       </form>
     </div>
 
