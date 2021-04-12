@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+* {
+    background-color: black;
+    font-family: "Roboto", serif;
+  }
+
+  * {
+    color: lime;
+  }
+
+  .avatar {
+    animation: fadeIn ease 2s;
+  }
+
+  .blue {
+    color: blue;
+  }
+
+  .hide {
+    visibility: hidden;
+  }
+
+  .footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer ul li {
+    display: inline-block;
+  }
+
+  .grey {
+    color: grey;
+    animation: fadeIn 1.5s ease 3s 1 normal forwards;
+    -webkit-animation: fadeIn 1.5s ease 3s 1 normal forwards;
+    visibility: hidden;
+  }
+
+  .pop {
+    visibility: hidden;
+    animation: popIn 1s ease 2s 1 normal forwards;
+    -webkit-animation: popIn 1s ease 2s 1 normal forwards;
+  }
+
+  div.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 30px 10px;
+  }
+
+  .avat {
+    display: flex;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  a {
+    text-decoration: none;
+    animation: fadeIn 1s ease 4s 1 normal forwards;
+    -webkit-animation: fadeIn 1s ease 4s 1 normal forwards;
+    visibility: hidden;
+  }
+
+  hr {
+    animation: fadeIn 1.5s ease 2s 1 normal forwards;
+    -webkit-animation: fadeIn 1.5s ease 2s 1 normal forwards;
+    visibility: hidden;
+  }
+
+  h1 {
+    color: lime;
+    font-family: "Roboto", serif;
+    font-size: 26px;
+    white-space: nowrap;
+    padding: 0;
+    overflow: hidden;
+    animation: animated-text 1.5s steps(20, end) 1s 1 normal both;
+    -webkit-animation: animated-text 1.5s steps(20, end) 1s 1 normal both;
+  }
+
+  .blink {
+    animation: 1s blink step-end infinite;
+  }
+
+  a:hover {
+    background-color: gray;
+  }
+
+  @-webkit-keyframes "blink" {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: lime;
+    }
+  }
+
+  .list {
+    margin-bottom: 150px;
+  }
+
+  @-webkit-keyframes animated-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 350px;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+      visibility: visible;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @-webkit-keyframes popIn {
+    0% {
+      opacity: 0;
+      visibility: visible;
+    }
+    99% {
+      opacity: 0;
+      visibility: visible;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @keyframes "blink" {
+    from,
+    to {
+      color: transparent;
+    }
+    50% {
+      color: lime;
+    }
+  }
+
+  @keyframes animated-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 340px;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      visibility: visible;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @keyframes popIn {
+    0% {
+      opacity: 0;
+      visibility: visible;
+    }
+    99% {
+      opacity: 0;
+      visibility: visible;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @media only screen and (min-width: 600px) and (min-height: 700px) {
+    .avat {
+      display: flex;
+      height: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 43;
+    }
+
+    @-webkit-keyframes animated-text {
+      from {
+        width: 0;
+      }
+      to {
+        width: 600px;
+      }
+    }
+
+    @keyframes animated-text {
+      from {
+        width: 0;
+      }
+      to {
+        width: 600px;
+      }
+    }
+
+    .footer {
+      position: fixed;
+    }
+  }
+  form {
+    animation: fadeIn 1s ease 4s 1 normal forwards;
+    -webkit-animation: fadeIn 1s ease 4s 1 normal forwards;
+    visibility: hidden;
+  }
+  textarea {
+    resize: none;
+  }
+  input[type="text"],
+  textarea {
+    border: none;
+  }
+
+  input[type="text"]:focus,
+  textarea:focus {
+    border: none;
+  }
+
+  label {
+    display: inline-block;
+  }
+
+  .form {
+    margin: 10px 0px;
+  }
