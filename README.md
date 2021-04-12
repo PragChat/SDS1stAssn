@@ -20,9 +20,6 @@ Clickable links will get highlighted when hovered. Comments (just like in termin
 
 A footer gives links to my FB, GitHub and Mail.
 
-The CSS might look cluttered. That's because I didn't create an external CSS at the start. And there're changes in every page. And I was running out o time for the same.
-I am sorry. I learnt from this that one external CSS should always be maintained for similar looking webpages from the start.
-
 You can view the site.
 
 Thank you.
