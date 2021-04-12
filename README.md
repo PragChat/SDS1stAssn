@@ -23,3 +23,6 @@ A footer gives links to my FB, GitHub and Mail.
 You can view the site.
 
 Thank you.
+
+#Edit-2:
+Seperated the CSS from HTML. Created a seperate assets folder for images and stylesheets.
